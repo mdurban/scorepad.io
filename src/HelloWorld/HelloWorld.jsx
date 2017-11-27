@@ -1,9 +1,9 @@
 import React from 'react'
-import ChildComponent from './ChildComponent'
+import ChildComponent from '../ChildComponent'
  
 const HelloWorld = () => (
   <div>
-    parent Component
+    parent component
     <ChildComponent />
   </div>
 )
