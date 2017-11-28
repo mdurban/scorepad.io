@@ -1,8 +1,8 @@
 import React from 'react';
 
-const ChildComponent = () => (
+const ChildComponent = ({valueFromParent}) => (
   <div>
-    child component
+    {`child component has a score of ${valueFromParent}`}
   </div>
 )
 
