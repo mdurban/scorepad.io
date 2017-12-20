@@ -1,5 +1,7 @@
 import React from 'react'
 import TotalScore from '../TotalScore'
+import TextField from 'material-ui/TextField'
+import './hello-world.scss'
  
 export default class HelloWorld extends React.Component {
   constructor(props) {
@@ -21,9 +23,8 @@ export default class HelloWorld extends React.Component {
   render() {
     return (
       <div>
-        parent component
-        <input type="text" name="numberOfAnimals" id="numberOfAnimalsScore" />
-        <input type="text" name="numberOfDwarves" id="numberOfDwarvesScore" />
+        <TextField hintText="number of animals" className="score-field" name="numberOfAnimals" id="numberOfAnimalsScore" />
+        <TextField hintText="number of dwarves" className="score-field" name="numberOfDwarves" id="numberOfDwarvesScore" />
         <button onClick={ () => { this.calculateTotalScore() }}>Submit</button>
 
         <TotalScore total={this.state.score} />
